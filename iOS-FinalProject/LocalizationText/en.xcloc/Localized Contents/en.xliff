@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="iOS-FinalProject/en.lproj/InfoPlist.strings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.4" build-num="12D4e"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName" xml:space="preserve">
+        <source>TreasureKing</source>
+        <target>TreasureKing</target>
+        <note>Bundle display name</note>
+      </trans-unit>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>iOS-FinalProject</source>
+        <target>iOS-FinalProject</target>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSPhotoLibraryAddUsageDescription" xml:space="preserve">
+        <source>Are you allow to add image to your album?</source>
+        <target>Are you allow to add image to your album?</target>
+        <note>Privacy - Photo Library Additions Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSUserTrackingUsageDescription" xml:space="preserve">
+        <source>your data will be used to deliver personalized ads to you</source>
+        <target>your data will be used to deliver personalized ads to you</target>
+        <note>Privacy - Tracking Usage Description</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="iOS-FinalProject/en.lproj/Localizable.strings" source-language="en" target-language="en" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.4" build-num="12D4e"/>
+    </header>
+    <body>
+      <trans-unit id="%@" xml:space="preserve">
+        <source>%@</source>
+        <target>%@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="0" xml:space="preserve">
+        <source>0</source>
+        <target>0</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="0%@ : %@%@" xml:space="preserve">
+        <source>0%1$@ : %2$@%3$@</source>
+        <target>0%1$@ : %2$@%3$@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id=":" xml:space="preserve">
+        <source>:</source>
+        <target>:</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Back to room" xml:space="preserve">
+        <source>Back to room</source>
+        <target>Back to room</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Build a room" xml:space="preserve">
+        <source>Build a room</source>
+        <target>Build a room</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Date" xml:space="preserve">
+        <source>Date</source>
+        <target>Date</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Edit appearance" xml:space="preserve">
+        <source>Edit appearance</source>
+        <target>Edit appearance</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Enter the room" xml:space="preserve">
+        <source>Enter the room</source>
+        <target>Enter the room</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Enter to room" xml:space="preserve">
+        <source>Enter to room</source>
+        <target>Enter to room</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Enter your name" xml:space="preserve">
+        <source>Enter your name</source>
+        <target>Enter your name</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="FIN" xml:space="preserve">
+        <source>FIN</source>
+        <target>FIN</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Fever!!" xml:space="preserve">
+        <source>Fever!!</source>
+        <target>Fever!!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Game Start" xml:space="preserve">
+        <source>Game Start</source>
+        <target>Game Start</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Green" xml:space="preserve">
+        <source>Green</source>
+        <target>Green</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Green Team Score: %@" xml:space="preserve">
+        <source>Green Team Score: %@</source>
+        <target>Green Team Score: %@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Host" xml:space="preserve">
+        <source>Host</source>
+        <target>Host</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Loading......." xml:space="preserve">
+        <source>Loading.......</source>
+        <target>Loading.......</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Log out" xml:space="preserve">
+        <source>Log out</source>
+        <target>Log out</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Lose..." xml:space="preserve">
+        <source>Lose...</source>
+        <target>Lose...</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="No" xml:space="preserve">
+        <source>No</source>
+        <target>No</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Not Ready" xml:space="preserve">
+        <source>Not Ready</source>
+        <target>Not Ready</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="PlayTimes" xml:space="preserve">
+        <source>PlayTimes</source>
+        <target>PlayTimes</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Ready" xml:space="preserve">
+        <source>Ready</source>
+        <target>Ready</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Red" xml:space="preserve">
+        <source>Red</source>
+        <target>Red</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Red Team Score: %@" xml:space="preserve">
+        <source>Red Team Score: %@</source>
+        <target>Red Team Score: %@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Result" xml:space="preserve">
+        <source>Result</source>
+        <target>Result</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Time" xml:space="preserve">
+        <source>Time</source>
+        <target>Time</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="TotalDays" xml:space="preserve">
+        <source>TotalDays</source>
+        <target>TotalDays</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Win!!!" xml:space="preserve">
+        <source>Win!!!</source>
+        <target>Win!!!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Winner" xml:space="preserve">
+        <source>Winner</source>
+        <target>Winner</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Wins" xml:space="preserve">
+        <source>Wins</source>
+        <target>Wins</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Yes" xml:space="preserve">
+        <source>Yes</source>
+        <target>Yes</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You don't have heart to play.ＱＱ" xml:space="preserve">
+        <source>You don't have heart to play.ＱＱ</source>
+        <target>You don't have heart to play.ＱＱ</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="background music" xml:space="preserve">
+        <source>background music</source>
+        <target>background music</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="bothWin!!!" xml:space="preserve">
+        <source>bothWin!!!</source>
+        <target>bothWin!!!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="cancle ready" xml:space="preserve">
+        <source>cancle ready</source>
+        <target>cancle ready</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="couponCode" xml:space="preserve">
+        <source>couponCode</source>
+        <target>couponCode</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="email" xml:space="preserve">
+        <source>email</source>
+        <target>email</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="name" xml:space="preserve">
+        <source>name</source>
+        <target>name</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="password" xml:space="preserve">
+        <source>password</source>
+        <target>password</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="ready" xml:space="preserve">
+        <source>ready</source>
+        <target>ready</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="roomCode" xml:space="preserve">
+        <source>roomCode</source>
+        <target>roomCode</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="sound effect" xml:space="preserve">
+        <source>sound effect</source>
+        <target>sound effect</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="start game" xml:space="preserve">
+        <source>start game</source>
+        <target>start game</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="use coupon" xml:space="preserve">
+        <source>use coupon</source>
+        <target>use coupon</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="室   長" xml:space="preserve">
+        <source>室   長</source>
+        <target>室   長</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

@@ -1,0 +1,6 @@
+/* Bundle display name */
+"CFBundleDisplayName" = "寶藏王";
+
+/* Privacy - Photo Library Additions Usage Description */
+"NSPhotoLibraryAddUsageDescription" = "是否允許存放照片到您的相簿？";
+

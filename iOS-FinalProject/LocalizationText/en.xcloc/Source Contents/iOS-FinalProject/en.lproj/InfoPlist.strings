@@ -1,0 +1,8 @@
+/* Bundle display name */
+"CFBundleDisplayName" = "TreasureKing";
+/* Bundle name */
+"CFBundleName" = "iOS-FinalProject";
+/* Privacy - Photo Library Additions Usage Description */
+"NSPhotoLibraryAddUsageDescription" = "Are you allow to add image to your album?";
+/* Privacy - Tracking Usage Description */
+"NSUserTrackingUsageDescription" = "your data will be used to deliver personalized ads to you";

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="iOS-FinalProject/en.lproj/InfoPlist.strings" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.4" build-num="12D4e"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName" xml:space="preserve">
+        <source>TreasureKing</source>
+        <target>寶藏王</target>
+        <note>Bundle display name</note>
+      </trans-unit>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>iOS-FinalProject</source>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSPhotoLibraryAddUsageDescription" xml:space="preserve">
+        <source>Are you allow to add image to your album?</source>
+        <target>是否允許存放照片到您的相簿？</target>
+        <note>Privacy - Photo Library Additions Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSUserTrackingUsageDescription" xml:space="preserve">
+        <source>your data will be used to deliver personalized ads to you</source>
+        <note>Privacy - Tracking Usage Description</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="iOS-FinalProject/en.lproj/Localizable.strings" source-language="en" target-language="zh-Hant" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="12.4" build-num="12D4e"/>
+    </header>
+    <body>
+      <trans-unit id="%@" xml:space="preserve">
+        <source>%@</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="0" xml:space="preserve">
+        <source>0</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="0%@ : %@%@" xml:space="preserve">
+        <source>0%1$@ : %2$@%3$@</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id=":" xml:space="preserve">
+        <source>:</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Back to room" xml:space="preserve">
+        <source>Back to room</source>
+        <target>回到房間</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Build a room" xml:space="preserve">
+        <source>Build a room</source>
+        <target>建立房間</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Date" xml:space="preserve">
+        <source>Date</source>
+        <target>日期</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Edit appearance" xml:space="preserve">
+        <source>Edit appearance</source>
+        <target>更換外表</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Enter the room" xml:space="preserve">
+        <source>Enter the room</source>
+        <target>進入房間</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Enter to room" xml:space="preserve">
+        <source>Enter to room</source>
+        <target>進入房間</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Enter your name" xml:space="preserve">
+        <source>Enter your name</source>
+        <target>輸入名字</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="FIN" xml:space="preserve">
+        <source>FIN</source>
+        <target>完成</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Fever!!" xml:space="preserve">
+        <source>Fever!!</source>
+        <target>平手!!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Game Start" xml:space="preserve">
+        <source>Game Start</source>
+        <target>開始遊戲</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Green" xml:space="preserve">
+        <source>Green</source>
+        <target>綠隊</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Green Team Score: %@" xml:space="preserve">
+        <source>Green Team Score: %@</source>
+        <target>綠隊分數： %@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Host" xml:space="preserve">
+        <source>Host</source>
+        <target>室長</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Loading......." xml:space="preserve">
+        <source>Loading.......</source>
+        <target>載入中......</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Log out" xml:space="preserve">
+        <source>Log out</source>
+        <target>登出</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Lose..." xml:space="preserve">
+        <source>Lose...</source>
+        <target>失敗...</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="No" xml:space="preserve">
+        <source>No</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Not Ready" xml:space="preserve">
+        <source>Not Ready</source>
+        <target>未準備</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="PlayTimes" xml:space="preserve">
+        <source>PlayTimes</source>
+        <target>遊玩次數</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Ready" xml:space="preserve">
+        <source>Ready</source>
+        <target>準備</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Red" xml:space="preserve">
+        <source>Red</source>
+        <target>紅隊</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Red Team Score: %@" xml:space="preserve">
+        <source>Red Team Score: %@</source>
+        <target>紅隊分數： %@</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Result" xml:space="preserve">
+        <source>Result</source>
+        <target>結果</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Time" xml:space="preserve">
+        <source>Time</source>
+        <target>耗時</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="TotalDays" xml:space="preserve">
+        <source>TotalDays</source>
+        <target>遊玩天數</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Win!!!" xml:space="preserve">
+        <source>Win!!!</source>
+        <target>獲勝!!!</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Winner" xml:space="preserve">
+        <source>Winner</source>
+        <target>贏家</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Wins" xml:space="preserve">
+        <source>Wins</source>
+        <target>獲勝場數</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Yes" xml:space="preserve">
+        <source>Yes</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="You don't have heart to play.ＱＱ" xml:space="preserve">
+        <source>You don't have heart to play.ＱＱ</source>
+        <target>沒有愛心可以玩了ＱＱ</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="background music" xml:space="preserve">
+        <source>background music</source>
+        <target>背景音樂</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="bothWin!!!" xml:space="preserve">
+        <source>bothWin!!!</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="cancle ready" xml:space="preserve">
+        <source>cancle ready</source>
+        <target>取消準備</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="couponCode" xml:space="preserve">
+        <source>couponCode</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="email" xml:space="preserve">
+        <source>email</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="name" xml:space="preserve">
+        <source>name</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="password" xml:space="preserve">
+        <source>password</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="ready" xml:space="preserve">
+        <source>ready</source>
+        <target>準備</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="roomCode" xml:space="preserve">
+        <source>roomCode</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="sound effect" xml:space="preserve">
+        <source>sound effect</source>
+        <target>開啟音效</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="start game" xml:space="preserve">
+        <source>start game</source>
+        <target>開始遊戲</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="use coupon" xml:space="preserve">
+        <source>use coupon</source>
+        <target>使用</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="室   長" xml:space="preserve">
+        <source>室   長</source>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
