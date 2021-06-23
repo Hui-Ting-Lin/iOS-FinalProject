@@ -26,6 +26,7 @@ struct RoomView: View {
                 .ignoresSafeArea()
             
             Text(firestoreData.currentRoom.roomCode)
+                .foregroundColor(.black)
                 .offset(x: UIScreen.screenWidth*0.45, y: -UIScreen.screenHeight*0.4)
             VStack{
                 HStack{
@@ -93,7 +94,7 @@ struct RoomView: View {
         .onReceive(gameStartedNotification, perform: { _ in
             firestoreGame.roomCode = firestoreData.currentRoom.roomCode
             if(!firestoreData.checkHostIsUser(id: firestoreData.user.id!)){
-                firestoreGame.getGame(userId: firestoreData.user.id!)
+                firestoreGame.getGame(userId: firestoreData.userDocId)
             }
         })
         .onReceive(gotGameNotification, perform: { _ in
@@ -134,6 +135,7 @@ struct playerView: View{
                         .frame(width: UIScreen.screenHeight * 0.3, height:  UIScreen.screenHeight * 0.3)
                         .clipped()
                     Text(player.userInfo.name)
+                        .foregroundColor(.black)
                     if(isHost){
                         RoundedRectangle(cornerRadius: 5)
                             .fill(Color(red: 247/255, green: 202/255, blue: 205/255))
@@ -141,6 +143,7 @@ struct playerView: View{
                             .overlay(
                                 //Text("室   長")
                                 Text("Host")
+                                    .foregroundColor(.black)
                             )
                             
                         
@@ -153,6 +156,7 @@ struct playerView: View{
                                 //Text(isReady ? "準   備" : "未 準 備")
                                 
                                 Text(isReady ? NSLocalizedString("Ready", comment: "") : NSLocalizedString("Not Ready", comment: ""))
+                                    .foregroundColor(.black)
                             )
                     }
                     

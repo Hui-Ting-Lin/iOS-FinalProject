@@ -35,6 +35,7 @@ struct StartView: View {
                                     .frame(width: UIScreen.screenHeight*0.1, height: UIScreen.screenHeight*0.1)
                                 Spacer()
                                 Text("Game Start")
+                                    .foregroundColor(.black)
                                     .font(.system(size: 22))
                                 Spacer()
                                 Image(imgName)

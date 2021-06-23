@@ -140,7 +140,7 @@ class FirestoreData: ObservableObject {
                     if(self.currentRoom.playerIDs.count<4){
                         self.roomIsFull = false
                         self.roomDocId = self.currentRoom.id!
-                        self.currentRoom.playerIDs.append(self.user.id!)
+                        self.currentRoom.playerIDs.append(self.userDocId)
                         self.updateRoom()
                         self.oldPlayerIDs = self.currentRoom.playerIDs
                         //self.checkRoomChange()
@@ -178,6 +178,7 @@ class FirestoreData: ObservableObject {
     }
     func exitRoom(id: String){
         print("exit")
+        self.isReady = false
         if(id == self.user.id){
             self.isReady = false
             self.listener?.remove()
@@ -347,7 +348,7 @@ class FirestoreData: ObservableObject {
     
     func userGetReady(){
         print("Get ready!")
-        self.currentRoom.readyPlayerIDs.append(self.user.id!)
+        self.currentRoom.readyPlayerIDs.append(self.userDocId)
         self.isReady = true
         self.updateRoom()
     }

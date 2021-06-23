@@ -26,7 +26,6 @@
 		AB5111E6263713BD0094ED7C /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5111E5263713BD0094ED7C /* ProfileView.swift */; };
 		AB53374B2670D6FC0052C4C2 /* FirebaseAnalyticsSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = AB53374A2670D6FC0052C4C2 /* FirebaseAnalyticsSwift-Beta */; };
 		AB53374D2670D7110052C4C2 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = AB53374C2670D7110052C4C2 /* FirebaseCrashlytics */; };
-		AB53376E2675062B0052C4C2 /* RewardedAdController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB53376D2675062B0052C4C2 /* RewardedAdController.swift */; };
 		AB5337742675201C0052C4C2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB5337722675201C0052C4C2 /* InfoPlist.strings */; };
 		AB5337772675201C0052C4C2 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB5337752675201C0052C4C2 /* Localizable.strings */; };
 		AB55ABCC263EEFA9007523DC /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB55ABCB263EEFA9007523DC /* StartView.swift */; };
@@ -73,7 +72,6 @@
 		AB230F3E265F7B64004606B1 /* FirestoreGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirestoreGame.swift; sourceTree = "<group>"; };
 		AB5111DF2636F0580094ED7C /* EnterNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterNameView.swift; sourceTree = "<group>"; };
 		AB5111E5263713BD0094ED7C /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		AB53376D2675062B0052C4C2 /* RewardedAdController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardedAdController.swift; sourceTree = "<group>"; };
 		AB5337732675201C0052C4C2 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		AB5337762675201C0052C4C2 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		AB533779267523390052C4C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -174,7 +172,6 @@
 				AB73EFF72631C4B70099B183 /* ViewController.swift */,
 				AB098941264AC579003AA1B5 /* FirestoreData.swift */,
 				AB230F3E265F7B64004606B1 /* FirestoreGame.swift */,
-				AB53376D2675062B0052C4C2 /* RewardedAdController.swift */,
 				AB5A77182676136500A8601E /* SoundController.swift */,
 			);
 			path = ViewModel;
@@ -185,7 +182,6 @@
 			children = (
 				AB55ABCB263EEFA9007523DC /* StartView.swift */,
 				AB5111DF2636F0580094ED7C /* EnterNameView.swift */,
-				AB55ABCE263EF034007523DC /* LoadingView.swift */,
 				AB5111E5263713BD0094ED7C /* ProfileView.swift */,
 				AB73EFF02631C14A0099B183 /* LoginView.swift */,
 				AB73EFE62631BBDE0099B183 /* RegisterView.swift */,
@@ -193,6 +189,7 @@
 				AB09895C264D7B86003AA1B5 /* CreateRoomView.swift */,
 				AB73F054263548BC0099B183 /* EditAppearanceView.swift */,
 				AB73F05C26354F860099B183 /* AppearanceObjectView.swift */,
+				AB55ABCE263EF034007523DC /* LoadingView.swift */,
 				AB230EF02659675F004606B1 /* GameView.swift */,
 				AB230E5C26516777004606B1 /* HomeView.swift */,
 				ABA14B2B2668BDCB00158D35 /* ResultView.swift */,
@@ -419,7 +416,6 @@
 				AB230EFC265CF098004606B1 /* Game.swift in Sources */,
 				AB73F060263557AB0099B183 /* AppearanceObject.swift in Sources */,
 				AB73EFEB2631BDBF0099B183 /* User.swift in Sources */,
-				AB53376E2675062B0052C4C2 /* RewardedAdController.swift in Sources */,
 				AB230E5526501596004606B1 /* RoomView.swift in Sources */,
 				AB5111E02636F0580094ED7C /* EnterNameView.swift in Sources */,
 				AB230EF126596760004606B1 /* GameView.swift in Sources */,

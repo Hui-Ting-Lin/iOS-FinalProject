@@ -41,6 +41,7 @@ struct SettingView: View {
                             .frame(width: UIScreen.screenHeight*0.1, height: UIScreen.screenHeight*0.1)
                     })
                     Text("sound effect")
+                        .foregroundColor(.black)
                     Button(action: {
                         soundController.playPoyoMusic()
                         soundController.toogleBackground()
@@ -50,6 +51,7 @@ struct SettingView: View {
                             .frame(width: UIScreen.screenHeight*0.1, height: UIScreen.screenHeight*0.1)
                     })
                     Text("background music")
+                        .foregroundColor(.black)
                 }
                 HStack{
                     TextField("couponCode", text: $couponCode)
@@ -64,6 +66,7 @@ struct SettingView: View {
                             .frame(width: UIScreen.screenHeight / 3.5, height: UIScreen.screenHeight / 9, alignment: .center)
                             .overlay(
                                 Text("use coupon")
+                                    .foregroundColor(.black)
                             )
                     })
                 }
@@ -86,6 +89,7 @@ struct SettingView: View {
                         .frame(width: UIScreen.screenHeight / 3.5, height: UIScreen.screenHeight / 9, alignment: .center)
                         .overlay(
                             Text("Log out")
+                                .foregroundColor(.black)
                         )
                 })
             }

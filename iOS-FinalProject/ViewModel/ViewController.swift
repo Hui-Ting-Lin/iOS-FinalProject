@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+import FirebaseAuth
 
 struct ViewController: View {
     @StateObject var gameObject = GameObject()
@@ -64,14 +64,21 @@ struct ViewController: View {
             }
             
         }
+        
         .onChange(of: scenePhase) { phase in
-            if phase == .background || phase == .inactive{
-                firestoreData.updateUser()
-                timer.upstream.connect().cancel()
+            if !firestoreData.user.userInfo.name.isEqual(""){
+                if phase == .background || phase == .inactive{
+                    firestoreData.updateUser()
+                    timer.upstream.connect().cancel()
+                }
+                if phase == .active{
+                    self.timer = Timer.publish (every: 1, on: .current, in: .common).autoconnect()
+                }
             }
-            if phase == .active{
-                self.timer = Timer.publish (every: 1, on: .current, in: .common).autoconnect()
+            else{
+                print("qqq")
             }
+            
         }
     }
     

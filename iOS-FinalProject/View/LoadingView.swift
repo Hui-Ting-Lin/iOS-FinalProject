@@ -26,6 +26,7 @@ struct LoadingView: View {
                 ActivityIndicator()
                     .frame(width: 50, height: 50)
                 Text("Loading.......")
+                    .foregroundColor(.black)
             }
         }
         .onAppear{

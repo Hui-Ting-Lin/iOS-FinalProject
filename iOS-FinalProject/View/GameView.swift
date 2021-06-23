@@ -20,6 +20,7 @@ struct GameView: View {
     @State private var dieCounter = 0
     @State private var currentDate = Date()
     @State private var showClock = false
+    @State private var attempts: Int = 0
     
     var body: some View {
         ZStack(){
@@ -68,6 +69,9 @@ struct GameView: View {
                     }
                     showClock = true
                     dieCounter += 1
+                    withAnimation(.default) {
+                        self.attempts += 1
+                    }
                     soundController.playDingMusic()
                 }
                 else{
@@ -97,6 +101,7 @@ struct GameView: View {
                     .resizable()
                     .frame(width: UIScreen.screenHeight*0.2, height: UIScreen.screenHeight*0.2)
             )
+            .modifier(Shake(animatableData: CGFloat(attempts)))
     }
     var PointsTable: some View{
         VStack{
@@ -296,5 +301,16 @@ struct GameView_Previews: PreviewProvider {
     static var previews: some View {
         GameView()
             .previewLayout(.fixed(width: UIScreen.screenWidth, height: UIScreen.screenHeight))
+    }
+}
+struct Shake: GeometryEffect {
+    var amount: CGFloat = 10
+    var shakesPerUnit = 3
+    var animatableData: CGFloat
+
+    func effectValue(size: CGSize) -> ProjectionTransform {
+        ProjectionTransform(CGAffineTransform(translationX:
+            amount * sin(animatableData * .pi * CGFloat(shakesPerUnit)),
+            y: 0))
     }
 }

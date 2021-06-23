@@ -30,7 +30,7 @@ struct LoginView: View {
                 TextField("password", text: $password)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .frame(width: UIScreen.screenWidth*0.5)
-                Button("Sign In"){
+                Button(NSLocalizedString("Sign In", comment: "")){
                     Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
                         
                         guard let user = result?.user, error == nil else{
@@ -50,10 +50,10 @@ struct LoginView: View {
                     }
                     
                 }
-                Button("Create an account"){
+                Button(NSLocalizedString("Create an account", comment: "")){
                     gameObject.currentState = .register
                 }
-                Button("Log in with Facebook"){
+                Button(NSLocalizedString("Log in with Facebook", comment: "")){
                     let manager = LoginManager()
                     manager.logIn(permissions: [.email, .publicProfile]){ (result) in
                         if case LoginResult.success(granted: _, declined: _, token: _) = result {

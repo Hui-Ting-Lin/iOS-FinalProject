@@ -156,18 +156,6 @@ extension AVPlayer {
     
 }
 
-extension RewardedAdController: GADFullScreenContentDelegate{
-    func adDidPresentFullScreenContent(_ ad: GADFullScreenPresentingAd) {
-        print(#function)
-    }
-    func adDidDismissFullScreenContent(_ ad: GADFullScreenPresentingAd) {
-        print(#function)
-    }
-    func ad(_ ad: GADFullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: Error){
-        print(#function, error)
-    }
-}
-
 extension UIViewController {
     static func getLastPresentedViewController() -> UIViewController? {
         let window = UIApplication.shared.windows.first {
@@ -180,3 +168,19 @@ extension UIViewController {
         return presentedViewController
     }
 }
+/*
+extension RewardedAdController: GADFullScreenContentDelegate{
+    func adDidPresentFullScreenContent(_ ad: GADFullScreenPresentingAd) {
+        print(#function)
+    }
+    
+    func adDidDismissFullScreenContent(_ ad: GADFullScreenPresentingAd) {
+        print(#function)
+    }
+    
+    func ad(_ ad: GADFullScreenPresentingAd, didFailToPresentFullScreenContentWith error: Error){
+        print(#function, error)
+    }
+    
+}
+*/

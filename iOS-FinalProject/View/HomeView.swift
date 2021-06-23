@@ -10,13 +10,16 @@ import FacebookLogin
 import FirebaseAuth
 import AVFoundation
 
+import GoogleMobileAds
+
 struct HomeView: View {
     @EnvironmentObject var gameObject: GameObject
     @EnvironmentObject var firestoreData: FirestoreData
     @EnvironmentObject var soundController: SoundController
-    let rewardedAdController = RewardedAdController()
     @State private var showAlert = false
     @State private var alertMsg = ""
+    
+    @State private var ad: GADRewardedAd?
     var body: some View {
         ZStack{
             Color(red: 199/255, green: 232/255, blue: 243/255)
@@ -34,31 +37,23 @@ struct HomeView: View {
                 Image("memo")
                     .resizable()
                     .frame(width: UIScreen.screenHeight*1, height: UIScreen.screenHeight*1)
-                    .onTapGesture(count: 3, perform:{
-                        rewardedAdController.loadAd()
-                    })
                     .overlay(
                         Button(action:{
                             soundController.playPoyoMusic()
                             gameObject.currentState = .profile
                         }, label:{
-                            gameObject.userImg
+                            Image(systemName: "defaultImg").data(url: URL(string: firestoreData.user.userInfo.image)!)
                                 .resizable()
                                 .scaledToFill()
                                 .frame(width: UIScreen.screenHeight * 0.4, height: UIScreen.screenHeight * 0.4)
                         })
                         
                     )
-                .offset(x: -UIScreen.screenWidth*0.1)
+                    .offset(x: -UIScreen.screenWidth*0.1)
                 
                 VStack{
                     HeartsView(heartsNum: firestoreData.user.heartsNum, timerCount: firestoreData.user.timerCount)
-                        .onTapGesture(count: 5, perform:{
-                            rewardedAdController.showAd()
-                        })
-                    
                     Button(action: {
-                        rewardedAdController.loadAd()
                         if(firestoreData.user.heartsNum == 0){
                             alertMsg = "Whether to watch the ad to get a heart?"
                             showAlert = true
@@ -73,6 +68,7 @@ struct HomeView: View {
                             .frame(width: UIScreen.screenHeight / 3.5, height: UIScreen.screenHeight / 9, alignment: .center)
                             .overlay(
                                 Text("Enter to room")
+                                    .foregroundColor(.black)
                             )
                     })
                     
@@ -83,15 +79,43 @@ struct HomeView: View {
         }
         .alert(isPresented: $showAlert){
             var alert = Alert(title: Text("You don't have heart to play.ＱＱ") , message: Text(alertMsg), primaryButton: .default(Text("Yes"), action: {
-                rewardedAdController.showAd()
-                DispatchQueue.main.asyncAfter(deadline: .now() + 3){
-                    firestoreData.addHeartsNum()
+                showAd(){result in
+                    switch result {
+                    case true:
+                        firestoreData.addHeartsNum()
+                    case false:
+                        print("failll")
+                    }
                 }
             }), secondaryButton: .default(Text("No"), action: {
                 print("才不要哩")
             }))
             
             return alert
+        }
+        .onAppear{
+            loadAd()
+        }
+    }
+    
+    func loadAd(){
+        let request = GADRequest()
+        GADRewardedAd.load(withAdUnitID: "ca-app-pub-3940256099942544/1712485313", request: request){ad, error in
+            if let error = error{
+                print(error)
+                return
+            }
+            self.ad = ad
+        }
+    }
+    
+    func showAd(completion: @escaping (Bool) -> Void){
+        if let ad = ad,
+           let controller = UIViewController.getLastPresentedViewController(){
+            ad.present(fromRootViewController: controller){
+                print("獲得獎勵")
+                completion(true)
+            }
         }
     }
     
@@ -105,7 +129,7 @@ struct HeartsView: View{
         HStack{
             RoundedRectangle(cornerRadius: 10, style: .continuous)
                 .fill(Color(red: 255/255, green: 255/255, blue: 232/255))
-                .frame(width: UIScreen.screenWidth * 0.3, height: UIScreen.screenHeight / 9, alignment: .center)
+                .frame(width: UIScreen.screenWidth * 0.32, height: UIScreen.screenHeight / 9, alignment: .center)
                 .overlay(
                     HStack(spacing: 4){
                         ForEach(0..<5){ index in
@@ -124,6 +148,7 @@ struct HeartsView: View{
                     }
                 )
             Text("0\((300 - timerCount)/60) : \(((300 - timerCount)%60)/10)\(((300 - timerCount)%60)%10)")
+                .foregroundColor(.black)
         }
     }
 }

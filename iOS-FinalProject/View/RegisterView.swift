@@ -29,7 +29,7 @@ struct RegisterView: View {
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .frame(width: UIScreen.screenWidth*0.5)
                 
-                Button("Sign Up"){
+                Button(NSLocalizedString("Sign Up", comment: "")){
                     
                     Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
                         
@@ -48,7 +48,7 @@ struct RegisterView: View {
                     
                 }
                 
-                Button("Already have an account?"){
+                Button(NSLocalizedString("Already have an account", comment: "")){
                     gameObject.currentState = .login
                 }
             }

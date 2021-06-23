@@ -39,6 +39,7 @@ struct ProfileView: View {
                                     .fill(Color(red: 255/255, green: 255/255, blue: 232/255))
                                     .overlay(
                                         Text("\(firestoreData.user.userInfo.name)")
+                                            .foregroundColor(.black)
                                             .bold()
                                     )
                                     .frame(width: UIScreen.screenWidth*0.58, height: UIScreen.screenHeight*0.1)
@@ -109,6 +110,7 @@ struct CircleView: View {
                         .fill(Color.yellow)
                         .overlay(
                             Text(txt)
+                                .foregroundColor(.black)
                             
                         )
                         .frame(width: UIScreen.screenWidth*0.105, height: UIScreen.screenWidth*0.0205)//105
@@ -116,6 +118,7 @@ struct CircleView: View {
                     
                 )
             Text("\(num)")
+                .foregroundColor(.black)
         }
     }
     
@@ -127,23 +130,31 @@ struct HistorysView: View {
             VStack{
                 HStack{
                     Text("Winner")
+                        .foregroundColor(.black)
                         .frame(width: UIScreen.screenWidth*0.12, height: UIScreen.screenHeight*0.1)
                     Text("Time")
+                        .foregroundColor(.black)
                         .frame(width: UIScreen.screenWidth*0.09, height: UIScreen.screenHeight*0.1)
                     Text("Date")
+                        .foregroundColor(.black)
                         .frame(width: UIScreen.screenWidth*0.13, height: UIScreen.screenHeight*0.1)
                     Text("Result")
+                        .foregroundColor(.black)
                         .frame(width: UIScreen.screenWidth*0.09, height: UIScreen.screenHeight*0.1)
                 }
                 ForEach(0..<historys.count){ index in
                     HStack{
                         Text("\(historys[index].winner)")
+                            .foregroundColor(.black)
                             .frame(width: UIScreen.screenWidth*0.12, height: UIScreen.screenHeight*0.1)
                         Text("\(historys[index].spendTime)")
+                            .foregroundColor(.black)
                             .frame(width: UIScreen.screenWidth*0.09, height: UIScreen.screenHeight*0.1)
                         Text("\(historys[index].timeStamp)")
+                            .foregroundColor(.black)
                             .frame(width: UIScreen.screenWidth*0.13, height: UIScreen.screenHeight*0.1)
                         Text(historys[index].win ? "Win" : "Lose")
+                            .foregroundColor(.black)
                             .frame(width: UIScreen.screenWidth*0.09, height: UIScreen.screenHeight*0.1)
                     }
                 }

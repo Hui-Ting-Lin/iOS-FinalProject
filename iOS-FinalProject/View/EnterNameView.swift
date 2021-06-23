@@ -24,10 +24,12 @@ struct EnterNameView: View {
                 .ignoresSafeArea()
             HStack{
                 Text("Enter your name")
+                    .foregroundColor(.black)
                 TextField("name", text: $name)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .frame(width: UIScreen.screenWidth*0.5)
-                Button("enter"){
+                
+                Button(action: {
                     let changeRequest = Auth.auth().currentUser?.createProfileChangeRequest()
                     changeRequest?.displayName = name
                     changeRequest?.commitChanges(completion: {
@@ -47,7 +49,10 @@ struct EnterNameView: View {
                     gameObject.currentState = .home
                     
                 }
-                
+                , label: {
+                    Text("enter")
+                        .foregroundColor(.black)
+                })
             }
         }
         .alert(isPresented: $showAlert) { () -> Alert in
